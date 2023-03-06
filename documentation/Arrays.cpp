@@ -76,5 +76,23 @@ int main() {
         cout << endl;
     }
 
+    // dinamikus tömb, azaz vektor
+    /*
+    A vector egy dinamikusan növekvő tömb implementációja, amely automatikusan kezeli a memóriakezelést, és képes 
+    újraalokálni a memóriát, amikor szükséges.
+    A vector használatakor a tömb mérete dinamikusan növekszik vagy csökken az elemek hozzáadása vagy eltávolítása során, 
+    és a memóriakezelés automatikusan történik. Avector által használt memória azonban nem folyamatos, 
+    mint egy hagyományos tömb esetében, hanem az elemek közötti részek lehetnek szabadon állóak a memóriában.
+    */
+
+    vector<int> myVector(5); // 5 elemű int típusú vektor
+    myVector.push_back(10); // elem hozzáadása a végéhez
+    myVector.resize(7); // a vektor méretének növelése 7-re
+    myVector[6] = 20; // az utolsó elem értékének beállítása
+    for (int i = 0; i < myVector.size(); i++) {
+        cout << myVector[i] << " "; // az elemek kiírása
+    }
+    cout << endl;
+
     return 0;
 }
