@@ -43,13 +43,8 @@ int main() {
 		cout << item.name << " " << item.race << " " << item.hp << " " << item.immortal << endl;
 	}
 
-	// tömb hozzáadása a listához
 	string tomb2[] = { "Mumbai", "London", "New York" };
-	list<string> lista(tomb2, tomb2 + 3);
-	// ellenőrizzük, hogy sikeres volt-e a hozzáadás
-	for (auto const& item : lista) {
-		cout << item << endl;
-	}
+
 
 	// Count: megszámolja a listában lévő elemeket
 	// Még akkor is 1-nek számít egy objektum, ha változókkal van feltöltve
