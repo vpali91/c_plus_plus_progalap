@@ -25,7 +25,7 @@ int main() {
 
     // Tömb metódusok
     // tomb1 hossza
-    cout << "tomb1.Length: " << sizeof(tomb1) / sizeof(*tomb1) << endl;
+    cout << "tomb1.Length: " << sizeof(tomb1) << endl;
 
     // összehasonlítás
     cout << "tomb1 == tomb2: ";
